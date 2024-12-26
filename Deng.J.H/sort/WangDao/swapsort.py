@@ -22,7 +22,7 @@ def quick_sort(arr, low, high):
         quick_sort(arr, pivot_pos + 1, high)
     return arr
 def partition(arr, low, high):
-    pivot = arr[low]
+    pivot = arr[low] #挖空low
     while low < high:
         #从右向左找第一个小于pivot的元素
         while low < high and arr[high] > pivot:
